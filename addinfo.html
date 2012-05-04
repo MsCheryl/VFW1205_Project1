@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Required information:
+	Project 1
+	Cheryl Ferguson
+	Visual Frameworks 1205
+	May 2, 2012-->
+
+
+<!--Required head section containing meta tags, title and links to css and javascript.-->
+
+	<head>
+			<meta charset="utf-8"/>
+			<meta name="description" content="Membership Information"/>
+			<meta name="keywords" content="church, membership"/>
+			<meta name="viewport" content="user-scalable=yes, width=device-width"/>
+			<meta name="MobileOptimized" content"320"/>
+			<meta name="robots" content="index, follow"/>
+			<meta name="author" content="Cheryl Ferguson VFW Project 1"/>
+		<title>Membership Database</title>
+    		<link href="css/styles.css" rel="stylesheet" type="text/css" />
+			<script src="js/main.js" type="text/javascript" ></script>
+	</head>
+
+<!--This begins required body section containing the page header, form tags and required field sets and legends plus labels.-->
+
+	<body>
+			<header>
+					<h1>Member Information</h1> <!--Required h1 title of my page.-->
+			</header>
+			<form action="#"> <!--Required form tag.-->
+					<fieldset> <!--Basic information.-->
+							<legend>Personal Information</legend>
+									<label for="fname">First Name:</label> <!--required text field.-->
+									<input id="fname" name="fname" type="text" placeholder="First Name" required/><br/>
+									<label for="lname">Last Name:</label> <!--required text field.-->
+									<input id="lname" name="lname" type="text" placeholder="Last Name" required/><br/>
+				<!--Required select and option tags.-->
+
+									<label for="marital_status">Marital Status</label>
+									<select>
+											<option value ="placeholder">Please Select One</option>
+											<option value ="single">Single</option>
+											<option value ="married">Married</option>
+											<option value ="divorced">Divorced</option>
+											<option value ="widow/widower">Widow/Widower</option>
+									</select><br/>
+
+									<label for="address">Address:</label>
+									<input type="text" id="address1"/></br>
+									<label for="city">City:</label>
+									<input type="text" id="city"/></br>
+									<label for="state">State:</label>
+									<input type="text" id="state"/></br>
+									<label for="zipcode">Zipcode:</label>
+									<input type="text" placeholder="12345"type="text"id="zipcode"/></br>
+									<label for="phonenumber">Phone Number:</label>
+									<input type="text" placeholder="(123)456-7890" type="text"id"phone"/></br>
+									<label for="email">Email:</label>
+									<input type="text" placeholder="username@email.com" type="text"id="email"/></br>
+									
+									<label for="gender">Gender:</label></br> <!-- Required radio tag. -->
+									<input type="radio" name="gender_male" value="male"/>Male</>
+									<input type="radio" name="gender_female" value="female"/>Female</>
+
+
+									
+					</fieldset>
+
+					<fieldset>
+							<legend>Ministry Information</legend>
+
+									<label for="baptism"> Baptized</label></br>
+									
+									<label for="yes">Yes</label> <!--Required checkbox tag.-->
+									<input id="yes" name="baptized" type="checkbox"/>
+
+									<label for="no">No</label>
+									<input id="no" name="baptized" type="checkbox"/><br/>
+
+									<label for="date_joined">Date Joined</label> <!--Required date tag.-->
+									<input id="date_joined" type="date"/>
+
+					</fieldset>
+
+					<fieldset>
+							<legend>Ease of Use</legend>
+									<p>How easy was this process:
+									</p> <!--Required range field.-->
+									<input type="range" min="1" max="10" name="ease_of_use_rating" type"range"/>
+									<br/>
+
+					</fieldset>
+
+					<fieldset>
+							<legend>Notes</legend>
+									<textarea placeholder="any additional information."></textarea><!--Required text area.-->
+					</fieldset>
+
+					<fieldset>
+							<legend>Finish</legend>
+									<p>Please take a minute to look over your information, if everything is correct, please submit your information, otherwise, click "Clear" to start over.</p>
+									<button type="submit"><a href="#" id="submit">Submit Information</a></button> <!--submit button-->
+									<button type="reset"><a href="#" id='clear'>Clear Information</a></button> <!--clear button-->
+			 						<button type="display"><a href="#" id="displayData">Display Information</a></button><!--display button-->
+
+									
+					</fieldset>
+
+<!--All the ending tags.-->
+
+			</form>
+	</body>
+</html>
